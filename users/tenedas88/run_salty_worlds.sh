@@ -1,0 +1,1 @@
+npx screeps start --password salt --host 192.168.1.152
