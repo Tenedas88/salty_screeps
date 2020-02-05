@@ -1,22 +1,44 @@
 var searchService = 
 {
-    findStructure: function(creep,type)
+    findStructure: function(creep,types,minAvailableCapacity)
     {
         return creep.room.find(FIND_STRUCTURES, {
-            filter: (structure) =>
+            filter: (structures) =>
             {
-                return (structure.structureType == type) &&
-                        structure.store.getFreeCapacity(RESOURCE_ENERGY) > 0;
+                var availableStructures = [];
+                for(structure in structures)
+                {
+                    for(type in types)
+                    {
+                        if(structure.structureType == type 
+                            && structure.store.getFreeCapacity(RESOURCE_ENERGY) > minAvailableCapacity)
+                        {
+                            availableStructures.push(structure);
+                        }
+                    }
+                }
+                return availableStructures;
             }
         });
     },
 
-    findSource: function(creep,type)
+    findSource: function(creep,types)
     {
         return creep.room.find(FIND_SOURCES,{
-            filter: (source) =>
+            filter: (sources) =>
             {
-                return (source.resourceType == type);
+                var availableResources = [];
+                for(source in sources)
+                {
+                    for(type in types)
+                    {
+                        if(source.resourceType == type)
+                        {
+                            availableResources.push(source);
+                        }
+                    }
+                }
+                return availableResources;
             }
         });
     }
