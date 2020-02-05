@@ -18,4 +18,9 @@ $clientfolder=("C:\Users\"+$username+"\AppData\Local\Screeps\scripts\"+$serverad
 $currentfolder=Get-Location
 $targetabsolutefolder=("$currentfolder"+$targetfolder.replace('.\','\'))
 
+if(Test-Path $clientfolder)
+{
+   Remove-Item -path $clientfolder -recurse -force;
+}
+
 New-Item -ItemType SymbolicLink -Path $clientfolder -Target $targetabsolutefolder
