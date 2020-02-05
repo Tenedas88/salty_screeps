@@ -14,4 +14,12 @@ To link client script folder of a given server to the git repository
 
 link_client.sh [IP] [port] [USERNAME(Windows)] windows [relative\path/to\game/folder\to/link]
 
-NOTE: script only supported on windows. Works with slashes,backslashes, relative paths
+NOTE: (WINDOWS)
+script only supported on windows. Works with slashes,backslashes, relative paths
+
+KNOWN BUG:
+if GIT BASH doesn't support symlinks properly with your version link may not work.
+use: 
+    "link_client.ps1"
+
+and substitute the script's hardcoded paths with yours
