@@ -1,0 +1,1 @@
+New-Item -ItemType SymbolicLink -Path "C:\Users\Davide\AppData\Local\Screeps\scripts\192_168_1_152___21025\default" -Target "C:\Users\Davide\Desktop\salty_screeps\users\tenedas88\Game"
