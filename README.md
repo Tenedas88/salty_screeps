@@ -18,8 +18,10 @@ NOTE: (WINDOWS)
 script only supported on windows. Works with slashes,backslashes, relative paths
 
 KNOWN BUG:
-if GIT BASH doesn't support symlinks properly with your version link may not work.
-use: 
-    "link_client.ps1"
+if your GIT BASH doesn't support symlinks properly the link process may not work correctly.
+instead use: 
 
-and substitute the script's hardcoded paths with yours
+link_client.ps1 [IP] [port] [USERNAME(Windows)] [relative\path/to\game/folder\to/link]
+
+NOTE:
+script need to run in powershell with admin rights
