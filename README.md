@@ -1,7 +1,7 @@
 # salty_screeps
 Repository for screeps game scripts
 
-************************START SERVER************************************************************
+************************ START SERVER ************************************************************
 
 To run a server below servers/SERVER_NAME/
 
@@ -11,7 +11,7 @@ npx screeps start --password YOURPASSWORD  --host IP_ADDRESS
 and add bash scripts there to launch servers on their machines
 
 
-************************LINK CLIENT CODE FOLDER TO GIT******************************************
+************************ LINK CLIENT CODE FOLDER TO GIT ******************************************
 
 To link client script folder of a given server to the git repository
 
@@ -30,10 +30,10 @@ NOTE:
 script need to run in powershell with admin rights
 
 
-************************AUTOCOMLPETION SUPPORT FOR VSCODE SERVER********************************
+************************ AUTOCOMLPETION SUPPORT FOR VSCODE SERVER ********************************
 
 to support autocompletion run:
-    *git submodule init
-    *git submodule update
+    git submodule init,
+    git submodule update
 
 to download the autocomlpetion-screeps repository
