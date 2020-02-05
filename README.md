@@ -33,7 +33,7 @@ script need to run in powershell with admin rights
 ************************ AUTOCOMLPETION SUPPORT FOR VSCODE SERVER ********************************
 
 to support autocompletion run:
-    *git submodule init
-    *git submodule update
+    git submodule init
+    git submodule update
 
 to download the autocomlpetion-screeps repository
