@@ -44,4 +44,4 @@ var searchService =
     }
 }
 
-module.export = searchService;
+module.exports = searchService;
